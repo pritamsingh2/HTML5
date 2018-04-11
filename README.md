@@ -54,44 +54,59 @@ color: white;
 }
 .login{
 background-color: lightgray;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 30px 5px;
   border: 1px solid lightgrey;
   border-radius: 3px;
+}
+.cancel{
+width: 100px; 
+background-color: #ccc;
+color: white;
+border-radius: 5px;
+
+}
+.register{
+margin-left: 20px;
+ width: 100px;
+ background-color: black;
+  color: white;
+border-radius: 5px;
 }
 
 
     </style>
 </head>
-<body>
+<body onload="Captcha()">
+<div class="container-fluid">
 <form class="login">
 <div class="row-25">
 
 
 
 <div class="row">
- <div class="col-xs-3"></div>
- <div class="col-xs-3">Email ID</div>
- <div class="col-xs-3">Password</div>
+ <div class="col-sm-3"></div>
+ <div class="col-sm-3">Email ID</div>
+ <div class="col-sm-3">Password</div>
 </div>
 <div class="row">
 
-<div class="col-xs-3">
+<div class="col-sm-3">
  <label>Already Registered?</label>
  
  </div>
  
- <div class="col-xs-3">
-<input type="text"  id="email" name="email" style="width: 300px;" />
+ <div class="col-sm-3">
+<input type="text"  id="email" name="email" style="width: 100%;background-color:lightgray;" />
 
 </div>
 
-<div class="col-xs-3">
-<input type="password"    name="psw" >
+<div class="col-sm-3">
+<input type="password"    name="psw" style="width: 60%;background-color:lightgray;">
 
  </div>
- <div class="col-sm-3">
+ <div class="col-sm-3" >
         
-      <button type="submit" class="go" >GO</button>
+      <button type="submit" class="go"style="float:right;">GO</button>
       </div>
 </div>
 
@@ -112,101 +127,102 @@ background-color: lightgray;
 
 
 <div class="row">
-<div class="col-xs-3"><label>Register As*</label></div>
+<div class="col-sm-3"><label>Register As*</label></div>
 </div>
 <div class="row">
-<div class="col-xs-3">
-	<select class="inputs" style="width: 220px; background-color:lightgray;">
+<div class="col-sm-3">
+	<select class="inputs" style="width: 100%; background-color:lightgray;">
 	<option >Select member type</option>
 	<option value="0"></option>
 	</select>
 	</div>
 	</div>
 	<div class="row">
-	<div class="col-xs-3"><label >Email ID*</label></div>
+	<div class="col-sm-3"><label >Email ID*</label></div>
 	</div>
 	<div class="row">
-	<div class="col-xs-3">
-	<input class="inputs" type="email" style="height: 20px; width: 220px; background-color:lightgray;"  placeholder="***@***.com" name="emailId" />
+	<div class="col-sm-3">
+	<input class="inputs" type="email" style="height: 20px; width: 100%; background-color:lightgray;"  placeholder="***@***.com" name="emailId" />
 	</div>
 	</div>
 	<div class="row">
-	<div class="col-xs-2"><label>Password*</label></div>
+	<div class="col-sm-3"><label>Password*</label></div>
 	
-	<div class="col-xs-2">
+	<div class="col-sm-3">
 	<label >Confirm Password*</label>
 	</div>
 	</div>
 	<div class="row">
-	<div class="col-xs-2">
-	<input class="inputs" style="display: table; width: 150px; height: 20px;margin-bottom: 8px;background-color:lightgray;" type="password" placeholder="" />
+	<div class="col-sm-3">
+	<input class="inputs" style="display: table; width: 60%; height: 20px;margin-bottom: 8px;background-color:lightgray;" type="password"  />
 	</div>
-	<div class="col-xs-2">
-	<input class="inputs" style="display:table;width: 150px; height: 20px;margin-bottom: 8px;background-color:lightgray;" type="password" placeholder="" required="required"/>
+	<div class="col-sm-3">
+	<input class="inputs" style="display:table;width: 80%; height: 20px;margin-bottom: 8px;background-color:lightgray;" type="password" />
 	</div>
 	</div>
 	<div class="row">
-	<div class="col-xs-2">
+	<div class="col-sm-3">
 	<label>Full name*</label>
 	</div>
 	</div>
 	<div class="row">
-	<div class="col-xs-2">
-	<input  type="text" style="display:table;width: 150px; height: 20px;margin-bottom: 8px;background-color:lightgray;"  placeholder="First Name" />
+	<div class="col-sm-3">
+	<input  type="text" style="display:table;width: 60%; height: 20px;margin-bottom: 8px;background-color:lightgray;"  placeholder="First Name" />
 	</div>
-	<div class="col-xs-2">
-	<input  type="text" style="display:table;width: 150px; height: 20px;margin-bottom: 8px;background-color:lightgray;"  placeholder="Middle Name" />
+	<div class="col-sm-3">
+	<input  type="text" style="display:table;width: 80%; height: 20px;margin-bottom: 8px;background-color:lightgray;"  placeholder="Middle Name" />
 	</div>
-	<div class="col-xs-2">
-	<input  type="text" style="display:table;width: 150px; height: 20px;margin-bottom: 8px;background-color:lightgray;"  placeholder="Last Name" />
+	<div class="col-sm-3">
+	<input  type="text" style="display:table;width: 80%; height: 20px;margin-bottom: 8px;background-color:lightgray;"  placeholder="Last Name" />
 	</div>
 	</div>
 	<div class="row">
-	<div class="col-xs-2">
+	<div class="col-sm-3">
 	<label>Display Name</label>
 	</div>
-	<div class="col-xs-2">
+	<div class="col-sm-3">
 	<label>Mobile Number*</label>
 	</div>
-	<div class="col-xs-2">
+	<div class="col-sm-3">
 	<label>Gender*</label>
 	</div>
 	</div>
 	<div class="row">
-	<div class="col-xs-2">
-	<input  type="text" style="display:table;width: 150px; height: 20px;margin-bottom: 8px;background-color:lightgray;"  />
+	<div class="col-sm-3">
+	<input  type="text" style="display:table;width: 60%; height: 20px;margin-bottom: 8px;background-color:lightgray;"  />
 	</div>
-	<div class="col-xs-2">
-	<input  type="text" style="display:table;width: 150px; height: 20px;margin-bottom: 8px;background-color:lightgray;"  />
+	<div class="col-sm-3">
+	<input  type="text" style="display:table;width: 80%; height: 20px;margin-bottom: 8px;background-color:lightgray;"  />
 	</div>
-	<div class="col-xs-2">
-	<select class="inputs" style="width: 150px;margin-bottom: 8px; background-color:lightgray;">
+	<div class="col-sm-3">
+	<select class="inputs" style="width: 80%;margin-bottom: 8px; background-color:lightgray;">
 	</select>
 	</div>
 	</div>
 	<div class="row">
-	<div class="col-xs-2">
+	<div class="col-sm-3">
 	<label>Captcha*</label>
 	</div>
-	<div class="col-xs-2">
+	<div class="col-sm-3">
 	<label>Enter the code here</label>
 	</div>
 	</div>
 	<div class="row">
-	<div class="col-xs-2">	<input class="inputs" type="text" id= "mainCaptcha"  readonly="true" style="display:table;width: 150px; height: 40px;margin-bottom: 8px;" /> </div>
-	<div class="col-xs-2"><input  type="text" style="display:table;width: 150px; height: 20px;margin-bottom: 8px;background-color:lightgray;"  /></div>
+	<div class="col-sm-3">	<input  type="text" id= "mainCaptcha"  readonly="true" style="display:table;width: 60%; height: 40px;margin-bottom: 8px;background-color:lightblue;" /> </div>
+	<div class="col-sm-3"><input  type="text" id="txtInput" style="display:table;width: 80%; height: 20px;margin-bottom: 8px;background-color:lightgray;"  /></div>
 	</div>
 	<div class="row">
-	<div class="col-xs-5">
-		<input type="checkbox" id="check" name="check" value="check" style="margin-right: 5px;margin-bottom: 20px;"/><label>I have read,understood and accepted the rules for membership.
-	</label> 
+	<div class="col-sm-5">
+	<input type="checkbox"  name="check" value="check" style="margin-right: 5px;margin-bottom: 60px;"/><label>I have read,understood and accepted the rules for membership.</label>
+	 
 	</div>
 	</div>
 	<div style="display: table; float: right" >
-	<input type="button" class="cancel" value="Cancel" onclick="cancel()">
-	<button type="submit" class="register"  onclick="ValidCaptcha(); password();">Register</button>
+	<input type="button" class="cancel" value="Cancel" onclick="cancel()"></input>
+	<button type="submit"  class="register" onclick="ValidCaptcha(); password();">Register</button>
 	</div>
 	</form>
+	</div>
 	</body>
 	<script type="text/javascript">
 	function Captcha(){
@@ -239,5 +255,8 @@ background-color: lightgray;
                         return false;
                       }
                   }
+				  
+				  
+				  
 	</script>
 </html>

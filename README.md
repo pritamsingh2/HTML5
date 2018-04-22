@@ -15,30 +15,10 @@
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  margin: 0 40px;
+  margin: 0 0px;
 }
 
-.row-25 {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-}
 
-.col-25 {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-}
-
-.row-75 {
-  -ms-flex: 75%; /* IE10 */
-  flex: 75%;
-}
-
-.row-25,
-.row-75,
-.col-25,
-.col-75 {
-  padding: 0 16px;
-}
   
 .inputs{
 margin-bottom: 20px;
@@ -55,8 +35,8 @@ color: white;
 .login{
 background-color: lightgray;
   padding: 5px 5px 30px 5px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
+  border: 1px solid lightgray;
+  border-radius: 1px;
 }
 .cancel{
 width: 100px; 
@@ -79,7 +59,7 @@ border-radius: 5px;
 <body onload="Captcha()">
 <div class="container-fluid">
 <form class="login">
-<div class="row-25">
+
 
 
 
@@ -110,7 +90,7 @@ border-radius: 5px;
       </div>
 </div>
 
-	  </div>
+	  
 </form>
 <br>
 
@@ -123,7 +103,7 @@ border-radius: 5px;
  <br>
  
  <form>
-<div class="row-75">
+
 
 
 <div class="row">
